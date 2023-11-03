@@ -7,3 +7,5 @@
 
 * Implements an Expression Tree data structure in Java.
 * On execution, takes an input in the form of a postfix mathematical expression from the user in the command line. It converts the expression into an Expression Tree data structure.
+* Evaluates the postfix expression.
+* Displays the postorder traversal of the expression tree.
