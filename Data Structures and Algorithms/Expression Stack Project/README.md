@@ -6,4 +6,4 @@
 * Type java ExpressionTest [your input here]
 
 * Implements a LinkedStack data structure in Java.
-* On execution, takes an input in the form of an infix mathematical expression in the command line. It can convert the infix expression into a postfix expression, as well as evaluate a postfix expression using the implemented stack.
+* On execution, takes an input in the form of an infix mathematical expression in the command line. It can convert the infix expression into a postfix expression, as well as evaluate a postfix expression using the implemented stack. It also executes a series of tests to test the conversion and evaluation of expressions.
