@@ -11,12 +11,14 @@ This version of the To-Do List Application is updated from the previous to store
 - Run the ```npm install``` command to install dependencies.
 - Create a new database in PostgreSQL. It can be named whatever you want. Tables will be set up by the application.
 - Open the ```models/index.js``` file. You are going to see this code:
+  
   ```
   const sequelize = new Sequelize("database", "username", "password", {
     host: "localhost",
     dialect: "postgres"
   });
   ```
+  
   Change the ```"database", "username", "password"``` arguments to the name of your newly created database, your PostgreSQL username, and your PostgreSQL password respectively.
 - Now everything is ready to use the application. Run the ```npm start``` command and open ```localhost:3000``` in your browser.
   If you wish to use a different port to run the application, open the ```index.js``` file in the main directory and change ```const port = 3000;``` to the port that you'd like to use.
