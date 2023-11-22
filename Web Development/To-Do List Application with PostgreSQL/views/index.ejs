@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="css/compiled/index.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <form action="/" method="GET">
+                    <input type="submit" value="Home" class="home">
+                </form>
+                <form action="/work" method="GET">
+                    <input type="submit" value="Work" class="work">
+                </form>
+            </nav>
+        </header>
+        <main>
+            <h1 class="title">To-Do List</h1>
+            <section class="tasks">
+                <% tasks.forEach((task) => { %>
+                    <article class="task">
+                        <button class="delete-task task-<%= task.id %>"></button>
+                        <p><%= task.task %></p>
+                    </article>
+                <% }); %>
+                <form action="/newToDoTask" method="GET" class="add-new-item">
+                    <input type="submit" value="Add New Item">
+                </form>
+            </section>
+        </main>
+        <footer>Copyrght ©2023</footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(".delete-task").on("click", async function () {
+                const taskID = $(this).attr("class").slice(17);
+                try {
+                    await $.ajax({
+                        url: `/${taskID}`,
+                        method: "DELETE"
+                    });
+                    window.location.href = "/";
+                }
+                catch (error) {
+                    console.error(`Error deleting task: ${error}`);
+                }
+            });
+        </script>
+    </body>
+</html>

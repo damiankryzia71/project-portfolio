@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Task</title>
+        <link rel="stylesheet" href="css/compiled/index.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <form action="/work" method="GET">
+                    <input type="submit" value="Back">
+                </form>
+            </nav>
+        </header>
+        <main id="new-task-main">
+            <div id="new-task-form">
+                <h2>Add New Work Task</h2>
+                <form action="/work" method="POST">
+                    <textarea cols="30" rows="10" name="task"></textarea>
+                    <button type="submit">Confirm</button>
+                </form>
+            </div>
+        </main>
+        <footer>Copyrght ©2023</footer>
+    </body>
+</html>
