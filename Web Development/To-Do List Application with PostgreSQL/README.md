@@ -28,3 +28,7 @@ This version of the To-Do List Application is updated from the previous to store
   If you wish to use a different port to run the application, open the ```index.js``` file in the main directory and change ```const port = 3000;``` to the port that you'd like to use.
 
 ## Using the application
+  - The home page displays everyday tasks.
+  - In the navbar at the top of the page, you can navigate to a separate page that hosts work-related tasks.
+  - New tasks can be added by clicking the "Add New Item" button.
+  - Tasks can be deleted by clicking their respective checkmark buttons.
