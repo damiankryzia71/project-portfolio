@@ -4,6 +4,10 @@ Created by Damian Kryzia
 
 This version of the To-Do List Application is updated from the previous to store tasks in a database. It also features a new UI design.
 
+### Technologies used:
+- Frontend: EJS (HTML), Sass (CSS), JavaScript, JQuery
+- Backend: Node.js, Express.js, PostgreSQL, Sequelize
+
 ## Starting the application:
 - Make sure that Node.js and PostgreSQL are installed on your computer.
 - Navigate to the app directory in VS Code or any other editor.
