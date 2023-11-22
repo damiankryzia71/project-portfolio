@@ -4,11 +4,11 @@ Created by Damian Kryzia
 
 This version of the To-Do List Application is updated from the previous to store tasks in a database. It also features a new UI design.
 
-### Technologies used:
+### Technologies used
 - Frontend: EJS (HTML), Sass (CSS), JavaScript, JQuery
 - Backend: Node.js, Express.js, PostgreSQL, Sequelize
 
-## Starting the application:
+## Starting the application
 - Make sure that Node.js and PostgreSQL are installed on your computer.
 - Navigate to the app directory in VS Code or any other editor.
 - Open a new terminal and navigate to the app directory.
@@ -26,3 +26,5 @@ This version of the To-Do List Application is updated from the previous to store
   Change the ```"database", "username", "password"``` arguments to the name of your newly created database, your PostgreSQL username, and your PostgreSQL password respectively.
 - Now everything is ready to use the application. Run the ```npm start``` command and open ```localhost:3000``` in your browser.
   If you wish to use a different port to run the application, open the ```index.js``` file in the main directory and change ```const port = 3000;``` to the port that you'd like to use.
+
+## Using the application
